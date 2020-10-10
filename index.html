@@ -4,34 +4,51 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="./styles.css">
   </head>
 
   <body>
     <main>
-      <secton class="profile-img-section">
-        </section>
-        <section class="user-name">
-        </section>
+      <div>
+        <secton class="profile-img-section"></section>
+      </div>
+        <!-- <section class="user-name">
+        </section> -->
 
-
-
-
+      <div class="repoContainer">
+        <secton class="repo-section"></section>
+      </div>
     </main>
 
-
-
-
     <script id="profile-img-section" type="text/x-handlebars-template">
-      <img src={{avatar_url}}id="profile-img"/>
-          </script>
-          <script id="user-name" type="text/x-handlebars-template">
-            <span>{{login}}</span>
-          </script>
+      <img src={{avatar_url}} id="profile-img"/>
+<div>
+      <a href={{followers_url}} target="_blank">Followers {{followers}}</a>
+      <a href={{following_url}} target="_blank">Following {{following}}</a>
+</div>
+      <p>{{location}}</p>
+    </script>
+    <!-- <script id="user-name" type="text/x-handlebars-template">
+      <span>{{login}}</span>
+
+    </script> -->
+    <script id="repo-section" type="text/x-handlebars-template">
+      {{#each data}}
+
+    <div class="border-bottom">
+      <a class="repo-name"href={{html_url}} target="_blank">{{name}}</a>
+
+      <p>{{updated_at}}</p>
+      <p>{{language}}</p>
+    </div>
+      {{/each}}
+    </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.2.0/handlebars.min.js"></script>
     <script src="https://kit.fontawesome.com/9a6235d7e7.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
     <script src="./main.js"></script>
   </body>
 
