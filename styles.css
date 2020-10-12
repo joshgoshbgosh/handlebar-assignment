@@ -53,6 +53,17 @@ nav > input {
 }
 
 
+.nav3 {
+  color: black;
+  height: 73px;
+  width:500px;
+  display:inline-block;
+  float:right;
+  font-size: 17px;
+
+}
+
+
 main {
   display:flex;
 
@@ -67,6 +78,28 @@ main > div {
   width: 250px;
 
 }
+
+.profileName {
+  font-size: 20px;
+  color: #878787;
+}
+.editProfile {
+  width:260px;
+  height: 40px;
+  font-size: 15px;
+  background-color: white;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  font-size: 17px;
+  font-weight: 100;
+
+
+}
+.location {
+  padding-bottom: 20px;
+border-bottom: 1px solid #e1e4e8!important;
+}
+
 a {
     color: #0366d6;
     text-decoration: none;

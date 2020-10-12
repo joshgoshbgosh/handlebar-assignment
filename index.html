@@ -23,6 +23,9 @@
     </nav>
     </header>
 
+
+
+
     <main>
       <div>
         <secton class="profile-img-section"></section>
@@ -31,6 +34,7 @@
         </section> -->
 
       <div class="repoContainer">
+        
         <secton class="repo-section"></section>
       </div>
     </main>
@@ -38,10 +42,18 @@
     <script id="profile-img-section" type="text/x-handlebars-template">
       <img src={{avatar_url}} id="profile-img"/>
 <div>
+  <p class="profileName">joshgoshbgosh</p>
+</div>
+
+<div>
+  <button class="editProfile">Edit profile</button>
+</div>
+
+<div>
       <a href={{followers_url}} target="_blank">Followers {{followers}}</a>
       <a href={{following_url}} target="_blank">Following {{following}}</a>
 </div>
-      <p>{{location}}</p>
+      <p class="location">{{location}}</p>
     </script>
     <!-- <script id="user-name" type="text/x-handlebars-template">
       <span>{{login}}</span>
