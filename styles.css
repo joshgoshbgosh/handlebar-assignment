@@ -5,6 +5,54 @@ body {
     color: #24292e;
     background-color: #fff;
 }
+
+header {
+  height:60px;
+  background-color: black;
+  display:flex;
+  justify-content: space-between;
+  text-align: center;
+}
+nav > a {
+  color: white;
+  font-weight: bold;
+
+}
+.nav1 {
+  padding: 10px;
+  margin-left: 45px;
+
+}
+.nav1 > a {
+  padding: 5px;
+  font-size: 15px;
+}
+.nav1 > i {
+  width: 20px;
+font-size: 30px;
+position: relative;
+right: 10px;
+top: 7px;
+}
+i {
+  color: white;
+}
+nav > input {
+  padding: 5px;
+  padding-left: 70px;
+  padding-right: 70px;
+  background-color: #383737;
+  color: #E5E5E5;
+
+}
+.nav2 > i {
+  position: relative;
+  top: 20px;
+  right: 40px;
+  font-size: 20px;
+}
+
+
 main {
   display:flex;
 
